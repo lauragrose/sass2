@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+#main-menu {
+  background-color: #170A48;
+  border-radius: 12px;
+  outline: 1px solid white;
+  box-shadow: 2px 2px 5px #F17730;
+}
+#main-menu h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+}
+#main-menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+#main-menu a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+#main h1 {
+  font-size: 2em;
+}
+#main article {
+  flex-basis: 60%;
+}
+#main aside {
+  flex-basis: 15%;
+}
+#main aside li {
+  list-style: none;
+  border-bottom: 1px dashed grey;
+  padding: 10px;
+}
+#main a {
+  color: #F17730;
+  text-decoration: none;
+  font-style: italic;
+}
+#main button {
+  background-color: #FFA500;
+  color: white;
+  padding: 7px 10px;
+  border-top-color: white;
+  border-left-color: white;
+  border-right-color: #b3b3b3;
+  border-bottom-color: #b3b3b3;
+}
+
+input {
+  border: 2px solid transparent;
+  border-bottom: 1px solid grey;
+  margin-bottom: 12px;
+}
+input:hover {
+  outline: 2px solid #89B3FB;
+}
+input:focus {
+  outline: 2px solid #89B3FB;
+}
+
+#footer {
+  height: 80px;
+  background-color: #6185F9;
+}/*# sourceMappingURL=style.css.map */

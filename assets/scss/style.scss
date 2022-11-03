@@ -1,0 +1,94 @@
+@import 'variabili';
+@import 'mixin';
+@import 'function';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+
+
+// HEADER
+
+body {
+    font-family: $openSans;
+    font-size: fontInit;
+    @include medium-screen {
+        font-size: em(1.2);
+    }
+}
+
+#main-menu {
+    @include menu;
+
+    h1 {
+        font-family: $roboto;
+        font-size: 1.5em;
+    }
+
+    li {
+        list-style: $pallini;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    a {
+        color: map-get($colori, 'biancoNav');
+        text-decoration: $decorazione;
+        font-style: $testoItalic;
+    }
+}
+
+//MAIN
+#main {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        font-size: 2em;
+    }
+
+    article {
+        flex-basis: 60%;
+    }
+
+    aside {
+        flex-basis: 15%;
+
+        li {
+            list-style: $pallini;
+            border-bottom: $tratteggio;
+            padding: 10px;
+        }
+    }
+
+    a {
+        color: map-get($colori, 'arancioA');
+        text-decoration: $decorazione;
+        font-style: $testoItalic;
+    }
+
+    button {
+        background-color: map-get($colori, 'arancioBtn');
+        color: map-get($colori, 'biancoNav');
+        padding: 7px 10px;
+        border-top-color: map-get($colori, 'biancoNav');
+        border-left-color: map-get($colori, 'biancoNav');
+        border-right-color: map-get($colori, 'grigioOmbra');
+        border-bottom-color: map-get($colori, 'grigioOmbra');
+    }
+}
+
+input {
+    border: 2px solid transparent;
+    border-bottom: 1px solid grey;
+    margin-bottom: 12px;
+
+    &:hover, &:focus  {
+        outline: 2px solid map-get($colori, 'azzurroBordo');
+        
+    }
+}
+//FOOTER
+#footer {
+    height: 80px;
+    background-color: map-get($colori, 'azzurroFoo');
+}

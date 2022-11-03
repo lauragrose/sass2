@@ -1,0 +1,6 @@
+@mixin menu {
+    background-color: map-get($colori, 'bluNav');
+    border-radius: 12px; //variabile e modifica
+    outline: 1px solid map-get($colori, 'biancoNav');
+    box-shadow: 2px 2px 5px map-get($colori, 'arancioA');
+}
